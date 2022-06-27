@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACTO</title>
+    <link rel="stylesheet" href="../assets/css/estilosrespon.css">
+</head>
+<body class="bkgImg">
+    <!--Barra de navegación-->
+    <div class="container">
+        <header class="header">
+            <nav>
+                <ul class="navegadores">
+                    <li class="home"><a href="../index.html">HOME</a></li>
+                    <li class="nosotros"><a href="./quienessomos.html">NOSOTROS</a></li>
+                    <li class="tienda"><a href="./tienda.html">TIENDA</a></li>
+                    <li class="contacto"><a href="./contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--Acá comienza el cuerpo con el formulario-->
+        <main class="main">
+            <section class="section1">
+                <h1 class="contact">Contacto y pedidos</h1>
+                <form>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="name">
+                    <label class="apellido" for="apellido">Apellido</label>
+                    <input class="apellido" type="text" id="apellido" name="surname"> <br>
+                    <label class="e-mail" for="e-mail">E-mail</label>
+                    <input class="e-mail" type="email" id="e-mail" name="email"> <br>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea class="textArea" name="message" id="mensaje" cols="30" rows="10"></textarea> <br>
+                    <input class="boton" type="button" value="Enviar">
+                </form> 
+            </section>
+            <!--Sección con iframe-->
+            <section class="section2">
+                <h1 class="contact">Ubicación</h1>
+                <iframe src="https://www.bing.com/images/search?q=google+maps+la+plata&form=HDRSC2&first=1&tsc=ImageHoverTitle"></iframe>
+            </section>
+        </main>
+        <!--Acá va el footer-->
+        <footer class="footer">
+            <nav>
+                <div>
+                    <h2>Todos los derechos reservados</h2>
+                </div>
+            </nav>
+        </footer>
+    </div>
+</body>
+</html>

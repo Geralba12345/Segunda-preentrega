@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 700px 70px;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer";
+    
+    padding: 5%;
+    margin: 0%;
+}
+
+.bkgImg{
+background-image: url(../img/fondo-de-web.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.navegadores{
+    display: flex;
+    justify-content: space-around;
+}
+
+.header {
+    grid-area: header;
+    background-image: linear-gradient(to bottom, rgb(250, 250, 106), rgb(19, 17, 17));
+}
+
+
+.main {
+    display: grid;
+    grid-area: main;
+    background-color: rgba(217, 217, 217, 80%)
+}
+
+
+.footer {
+    grid-area: footer;
+    font-family: 'IM Fell Great Primer', serif;
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, rgb(189, 189, 69), rgb(19, 17, 17));
+
+}
+
+.section1 {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    justify-content: space-around;
+    align-items: center;
+    border-style: solid none none none;
+    border-radius: 0px;
+    border-width: 0.5px;
+}
+
+.section2 {
+    width: 100%;
+    display: grid;
+    grid-column: 2/2;
+    grid-row: 1/3;
+    justify-content: center;
+    align-items: center;
+    border-style: solid none none none;
+    border-radius: 0px;
+    border-width: 1.5px;
+}
+
+.flexConteiner {
+    font-size: x-large;
+}
+
+
+
+
+
+/* .nav .flexPadre {
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    margin: 20px;
+    height: 300px;
+    width: 400px;
+    height: 300px;
+    width: 430px
+    height: 300px;
+    width: 400px;
+} */
+
+li a {
+    font-family: 'IM Fell Great Primer', serif;
+    text-decoration: none;
+    color: black;
+    
+}
+
+ul {
+    list-style: none;
+    display: flex;
+
+}
+
+.home {
+    margin: 50px;
+    font-size: large;
+    height: 0.1px;
+}
+
+.nosotros {
+    margin: 50px;
+    font-size: large;
+    height: 0.1px;
+}
+
+.tienda {
+    margin: 50px;
+    font-size: large;
+    height: 0.1px;
+}
+
+.contacto {
+    margin: 50px;
+    font-size: large;
+    height: 0.1px;
+}
+
+.image-index-discos {width: 440px;
+    max-width: 100%;
+}
+
+
+.image-index-portadas {
+    width: 100%;
+    max-width: 440px;
+}
+
+.image-quienessomos {
+    width: 440px;
+    max-width: 100%;
+}
+
+.image-tienda-jagger {
+    height: 300px;
+    width: 430px;
+    transition: height 2s;
+}
+
+.image-tienda-jagger:hover{
+    height: 400px;
+}
+
+.image-tienda-charly {
+    height: 300px;
+    width: 430px;
+    transition: height 2s;
+}
+
+.image-tienda-charly:hover{
+    height: 400px;
+}
+
+.image-tienda-duki {
+    height: 300px;
+    width: 430px;
+    transition: height 2s;
+}
+
+.image-tienda-duki:hover{
+    height: 400px;
+}
+
+.image-compra-album {
+    width: 440px;
+    max-width: 100%;
+}
+
+main {
+    font-family: 'IM Fell Great Primer', serif;
+    margin: 0%;
+    padding: 0%;
+}
+
+h1 {
+    font-size: x-large;
+
+}
+
+.list {
+    font-size: x-large;
+    list-style: disc;
+    display:block;
+    width: auto;
+
+
+}
+
+footer div {
+    border-style: solid none none none;
+    border-radius: 0px;
+    border-width: 1.5px;
+    padding: 15px;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    font-family: 'IM Fell Great Primer', serif;
+    align-items: center;
+    font-size: large;
+    width: 400px;
+    height: 70px;
+    background-color: rgba(17, 16, 16, 70%);
+    color: rgba(255, 255, 255, 1);
+}
+
+.informacion {
+    font-size: larger;
+}
+
+iframe {
+    font-size: larger;
+    width: 400px;
+    height: 400px;
+}
+
+input {
+    width: 200px;
+    height: 20px;
+    background-color: rgba(17, 16, 16, 30%);
+
+}
+
+label {
+    display: flex;
+}
+
+.apellido {
+    display: flex;
+    bottom: 42px;
+}
+
+.e-mail {
+    display: flex;
+    width: 405px;
+}
+
+.textArea {
+    display: flex;
+    width: 405px;
+    background-color: rgba(17, 16, 16, 30%);
+}
+
+.boton {
+    background-color: rgba(17, 16, 16, 70%);
+    color: rgba(255, 255, 255, 1);
+    width: 405px;
+    height: 58px;
+    font-family: 'IM Fell Great Primer', serif;
+    font-size: large;
+}
+
+
+
+
+
+
+
+
+@media(max-width:1200px) {
+    .container {
+        grid-template-columns: 350px 350px 350px;
+        grid-template-rows: 100px 700px 70px;
+        grid-template-areas:
+            "header header"
+            "main main"
+            "footer footer";
+
+    }
+
+    nav {
+        flex-wrap: wrap;
+        list-style: none;
+        text-decoration: none;
+        padding: 5px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .list {
+        font-size: large;
+        list-style: disc;
+        display:block;
+        width: auto;
+    }
+
+    .flexConteiner{
+        font-size: large;
+        display:block;
+        width: auto;
+    }
+    
+    .informacion{
+        font-size: medium;
+        display:block;
+        width: auto;
+        align-self: center;
+    }
+
+    button{
+        width: 200px;
+    }
+
+    label {
+        display:block;
+        width: auto;
+    }
+
+    input {
+        display:block;
+        width: auto;
+        background-color: rgba(17, 16, 16, 30%);
+    
+    }
+
+    .e-mail {
+        display:block;
+        width: auto;
+    }
+
+    .textArea {
+        display:block;
+        width: 200px
+    }
+
+    .boton {
+        display:block;
+        width: 200px
+    }
+
+    iframe {
+        display:block;
+        width: auto;
+    }
+
+    .image-tienda-jagger {
+        width: 220px;
+    }
+    
+    .image-tienda-charly {
+        width: 220px;
+    }
+    
+    .image-tienda-duki {
+        width: 220px;
+    }
+
+    .contact{
+        font-size: large;
+    }
+
+
+
+
+}
